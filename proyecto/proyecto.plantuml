@@ -10,10 +10,12 @@ class Aviso
 Sistema -l-> Red : Posee >
 Sistema --> Hardware : Obtiene >
 Sistema --> Usuario : Tiene >
-Sistema --> Aviso : Realiza >
+Sistema -r-> Aviso : Realiza >
 
+/'
 Sistema -u-|> SistemaDeVigilancia
 Sistema -r-|> SistemaDeAlarmas
+'/
 
 Red --|> RedAlumnos
 Red --|> RedProfesores
@@ -21,7 +23,7 @@ Red --|> RedProfesores
 Hardware --|> Switch
 Hardware --|> Router
 
-Aviso --|> Gmail
+Aviso --|> Email
 
 Usuario --|> TecnicosInternos
 Usuario --|> TecnicosExternos
