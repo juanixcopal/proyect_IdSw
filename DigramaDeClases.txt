@@ -1,0 +1,18 @@
+@startuml
+class usuario
+class interfaz
+class software
+class hardware
+class red
+class sistema
+class notificaciones
+
+interfaz*-- usuario
+sistema *-- interfaz
+sistema *-- red
+sistema *-- software
+sistema *-- hardware
+
+notificaciones --- usuario
+notificaciones --* interfaz
+@enduml
