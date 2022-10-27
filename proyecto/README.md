@@ -2,5 +2,5 @@
 
 |Diagrama de clases|
 |:-:|
-|![Imagen](proyecto.PNG)|
+|![Imagen](proyecto-idf.PNG)|
 |[Código del modelo](proyecto.plantuml)|
