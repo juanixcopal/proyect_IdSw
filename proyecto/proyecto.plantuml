@@ -12,7 +12,7 @@ Sistema --> Hardware : Obtiene >
 Sistema --> Usuario : Tiene >
 Sistema --> Aviso : Realiza >
 
-Sistema -u-|> SistemaDeVigilacion
+Sistema -u-|> SistemaDeVigilancia
 Sistema -r-|> SistemaDeAlarmas
 
 Red --|> RedAlumnos
