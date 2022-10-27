@@ -25,6 +25,7 @@ Hardware --|> Router
 
 Aviso --|> Email
 
+
 Usuario --|> TecnicosInternos
 Usuario --|> TecnicosExternos
 
