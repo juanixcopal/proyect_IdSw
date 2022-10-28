@@ -1,0 +1,32 @@
+@startuml proyecto
+/' Diagrama de Clases -> Diagrama de Objetos -> Diagrama de estados '/
+
+class Red 
+class Sistema
+class Hardware
+class Usuario
+class Aviso
+
+Sistema -l-> Red : Posee >
+Sistema --> Hardware : Obtiene >
+Sistema --> Usuario : Tiene >
+Sistema -r-> Aviso : Realiza >
+
+/'
+Sistema -u-|> SistemaDeVigilancia
+Sistema -r-|> SistemaDeAlarmas
+'/
+
+Red --|> RedAlumnos
+Red --|> RedProfesores
+
+Hardware --|> Switch
+Hardware --|> Router
+
+Aviso --|> Email
+
+
+Usuario --|> TecnicosInternos
+Usuario --|> TecnicosExternos
+
+@enduml
