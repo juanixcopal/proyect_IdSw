@@ -1,4 +1,4 @@
-# proyect_IdSw
+# Proyecto ingeniería de software
 
 |Modelo de dominio V1|Modelo de dominio V2|
 |:-:|:-:|
