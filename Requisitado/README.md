@@ -16,7 +16,7 @@ Dirige todos los sistemas de la Universidad
 * Red PDIPAS
 
 # Adminstra
-##Hardware
+## Hardware
 * Switch's
 * Router's
 * Servidores
@@ -25,13 +25,13 @@ Dirige todos los sistemas de la Universidad
 * Impresoras
 * Teléfonos Voip
 
-##Software
+## Software
 * Sistema de vigilancia
 * Sistema de alarmas
 * Sistema de fichaje
 * Sistema Parking
 
-##Redes de
+## Redes de
 * Uneat
 * Residencia
 * Unic (Angola)
