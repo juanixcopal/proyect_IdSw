@@ -1,0 +1,39 @@
+@startuml proyecto
+
+state fork_state <<fork>>
+
+state NONAME_REDES as " "
+state NONAME_USUARIOS as " "
+state NONAME_DISPOSITIVOS as " "
+state NONAME_ROUTERS as " "
+state NONAME_CONTACTOS as " "
+state NONAME_SWITCHES as " "
+
+[*] --> Inicio
+Inicio --> fork_state
+
+'Usuarios
+fork_state --> NONAME_USUARIOS: listarUsuarios
+NONAME_USUARIOS --> NONAME_USUARIOS: crear usuario
+
+'Redes
+fork_state --> NONAME_REDES: listarRedes
+NONAME_REDES --> NONAME_REDES: crear red
+NONAME_REDES --> Red: AbrirRed / listar hardware
+
+'Routers
+Red --> NONAME_ROUTERS: listarRouters
+NONAME_ROUTERS --> NONAME_ROUTERS: agregar routers
+
+'Contactos
+NONAME_ROUTERS --> NONAME_CONTACTOS: listarContactos
+NONAME_CONTACTOS --> NONAME_CONTACTOS: agregar contactos
+
+'Switches
+Red -r-> NONAME_SWITCHES: listarSwitches
+NONAME_SWITCHES --> NONAME_SWITCHES: agregar switches
+
+'Dispositivos
+Red --> NONAME_DISPOSITIVOS: listarDispositivos
+NONAME_DISPOSITIVOS --> NONAME_DISPOSITIVOS: agregar dispositivos
+@enduml
