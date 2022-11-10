@@ -1,22 +1,22 @@
 # Requisitado Cliente (Rodrigo Zaldaña)
 
-_Rodrigo Zaldaña Calles
+## Rodrigo Zaldaña Calles
 
-##Encargado en Sistemas de Operación
+## Encargado en Sistemas de Operación
 
-_Dirige todos los sistemas de la Universidad
+Dirige todos los sistemas de la Universidad
 
-##Redes de la Universidad
-_Red Gestión
-_Red Alumnos
-_Red Profesores
-_Red Pública
-_Red Becarios
-_Red Laboratorios(bio, etc)
-_Red PDIPAS
+## Redes de la Universidad
+* Red Gestión
+* Red Alumnos
+* Red Profesores
+* Red Pública
+* Red Becarios
+* Red Laboratorios(bio, etc)
+* Red PDIPAS
 
-##Adminstra
-_Hardware
+# Adminstra
+##Hardware
 * Switch's
 * Router's
 * Servidores
@@ -25,13 +25,13 @@ _Hardware
 * Impresoras
 * Teléfonos Voip
 
-_Software
+##Software
 * Sistema de vigilancia
 * Sistema de alarmas
 * Sistema de fichaje
 * Sistema Parking
 
-_Redes de
+##Redes de
 * Uneat
 * Residencia
 * Unic (Angola)
