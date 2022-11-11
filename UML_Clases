@@ -2,11 +2,10 @@
 class User
 class Admin
 class System
-Class Moderator
+Class Moderador
 class Dashboard
 class Software
 class Hardware
-class Network
 class Notification
 class Router
 class SistemaAlarmas
@@ -17,28 +16,27 @@ class SecurityCamera
 Admin -r-- System
 Admin <|-- Notification
 Admin --- User
-Admin -- Moderator
+Admin -- Moderador :Genera
 
-Moderator -- User
-Moderator -- Dashboard
+Moderador -- User: Gestiona
+Moderador -- Dashboard: Gestiona
 
-User .r.. Dashboard
+User "*" .r.. "1" Dashboard
 
-System --- Dashboard
-System *-- Notification
+System *--- Dashboard : Representado en
+System *-- Notification :Crea
 
-Dashboard -- Software
-Dashboard -- Hardware
+Dashboard -- Software :Contiene
+Dashboard -- Hardware :Contiene
 
 Software -- SistemaAlarmas
 Software -- SistemaIncendios
-Software -- Network
 
-Hardware -- SecurityCamera
 Hardware -- Router
 Hardware -- Switch
 
+Switch -- Vlan
 
-
+Vlan -- SecurityCamera
 
 @enduml
