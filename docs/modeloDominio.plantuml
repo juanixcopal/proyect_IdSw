@@ -1,0 +1,29 @@
+@startuml
+class Usuario
+class Red
+class Notificacion
+class Router
+class NumeroReferencia
+class Firewall
+class Switch
+class Vlan
+class Sistema
+class Dispositivo
+
+Usuario --o Red : gestiona >
+
+Usuario <|-- Notificacion : notifica <
+Notificacion <|.l. Red  : crea <
+
+Red *-- Firewall : posee >
+Red *-- Switch : posee >
+Red *-- Router : posee >
+
+NumeroReferencia .r.|> Router : tiene <
+
+Switch *-- Vlan : tiene >
+
+Vlan *-- Sistema : tiene >
+
+Sistema *-- Dispositivo : contiene >
+@enduml

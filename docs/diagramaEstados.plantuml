@@ -1,0 +1,29 @@
+@startuml
+
+
+[*] --> red
+red --> red : crear red
+
+red --> router : listar
+router --> router : crear router
+router --> [*]
+
+red --> firewall : listar
+firewall --> firewall : crear firewall
+firewall --> [*]
+
+red --> switch : listar
+switch --> switch : crear switch
+
+switch --> vlan : listar
+vlan --> vlan : crear vlan
+
+vlan --> sistema : listar
+sistema --> sistema : crear sistema
+
+sistema --> dispositivo : listar
+dispositivo --> dispositivo : crear dispositivo
+dispositivo --> [*]
+
+
+@enduml

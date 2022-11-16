@@ -1,0 +1,74 @@
+@startuml
+class Usuario{
++username:
++password:
++Rol:
+}
+
+class Red{
++name:
+}
+
+class Router{
++marca:
++series:
++NumeroModelo:
++NumeroPuertos:
++IP:
++MAC:
++username:
++password:
+}
+
+class NumeroReferencia{
++NumeroTelefono:
+}
+
+class Firewall{
++Marca:
++Series:
++NumeroModelo:
++SistemaOperativo:
+}
+
+class Switch{
++Name:
++IP:
++MAC:
++username:
++password:
++Modelo:
++Marca:
+}
+
+class Vlan{
++Name:
++IP:
++Gateway:
+}
+
+class Sistema{
++Name:
++Tipo:
+}
+
+class Dispositivo{
++IP:
++MAC:
++Tipo:
+}
+
+Usuario --> Red
+
+Red <-- Firewall
+Red <-- Switch
+Red <-- Router
+
+NumeroReferencia -r-|> Router
+
+Switch <-- Vlan
+
+Vlan <-- Sistema
+
+Sistema <-- Dispositivo
+@enduml
