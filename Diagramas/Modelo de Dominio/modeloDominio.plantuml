@@ -1,23 +1,29 @@
 @startuml
+class Usuario
 class Red
+class Notificacion
 class Router
+class NumeroReferencia
 class Firewall
 class Switch
-class Usuario
+class Vlan
+class Sistema
+class Dispositivo
 
-Usuario <.. Notificacion
-Usuario --> Red : gestiona >
+Usuario --o Red : gestiona >
 
-Red ..> Notificacion
-Red *--> Router : tiene >
-Red *--> Firewall : tiene >
-Red *--> Switch : tiene >
+Usuario <|-- Notificacion : notifica <
+Notificacion <|.l. Red  : crea <
 
-Router <|.. NumeroRef
+Red *-- Firewall : posee >
+Red *-- Switch : posee >
+Red *-- Router : posee >
 
-Switch <-- Vlan
+NumeroReferencia .r.|> Router : tiene <
 
-Vlan <-- Sistema
+Switch *-- Vlan : tiene >
 
-Sistema <-- Dispositivos
+Vlan *-- Sistema : tiene >
+
+Sistema *-- Dispositivo : contiene >
 @enduml
